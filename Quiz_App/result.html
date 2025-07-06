@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Result</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h2 id="result-text">Calculating...</h2>
+    <a href="index.html" style="color: #4caf50;">Go to Home</a>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const score = params.get("score");
+    const total = params.get("total");
+
+    document.getElementById("result-text").textContent = 
+      `You scored ${score} out of ${total}`;
+  </script>
+</body>
+</html>

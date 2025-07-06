@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Frontend Quiz App</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Welcome   to the <br><span>Frontend Quiz!</span></h1>
+      <p>Pick a subject to get started.</p>
+    </div>
+
+    <div class="right">
+      <div class="theme-toggle">
+        <span><image src="assets\icons\sun.png"></image></span>
+        <label class="switch">
+          <input type="checkbox" id="toggle-theme">
+          <span class="slider round"></span>
+        </label>
+        <span><image src="assets\icons\moon.png"></image></span>
+      </div>
+
+      <div class="subjects">
+        <a href="quiz.html?subject=html" class="subject">
+          <img src="assets/icons/html.png" alt="HTML"> HTML
+        </a>
+        <a href="quiz.html?subject=css" class="subject">
+          <img src="assets/icons/css.png" alt="CSS"> CSS
+        </a>
+        <a href="quiz.html?subject=javascript" class="subject">
+          <img src="assets/icons/js.png" alt="JavaScript"> JavaScript
+        </a>
+        <a href="quiz.html?subject=accessibility" class="subject">
+          <img src="assets/icons/accessibility.png" alt="Accessibility"> Accessibility
+        </a>
+      </div>
+    </div>
+  </div>
+
+<script src="js/themeToggle.js"></script>
+
+</body>
+</html>
